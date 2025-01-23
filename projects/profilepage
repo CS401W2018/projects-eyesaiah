@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+</head>
+<body>
+    <h1><u>Aloha! I'm Isaiah Gasmen</u></h1>
+    <p1>I am from in the Philippines, I grow in the city called Baguio with my family. Baguio city is a cold area it's a mountain area, some of us are Igorot it called Igorot Tribe. It shows originally or local living in Baguio City.</p1>
+    <h5>These are my Hobbies below:</h5>
+    <blockquote><ol type="A">
+    <li>Martial Arts</li>
+    <li>Dancing</li>
+    <li>Chess</li>
+    <li>Books</li>
+    <li>Gym (Workout)</li></blockquote></ol>
+
+    <p>I served in the <b>Philippines</b> Legazpi Mission from 2021 to 2023 during pandemic. It's a Bicol Region 5, which is the Tagalog language and Bicol langugae that we use. I enjoyed and never regret going on the mission and I learned so much about how to become a better person and being humble at all times. Lastly, I gain a strong testimony of the Gospel of Jesus Christ.</p>
+
+    <h2>My favorite quote from <u>Dieter F. Uchtdorf</u></h2>
+    <p><blockquote>&it; <mark>"We can partake of an Abundant Feast of Spiritual Opportunity &amp; Universal Blessing"</mark></p></blockquote>
+    <p>&copy; 2025 Isaiah Gasmen</p>
+</body>
+</html>
