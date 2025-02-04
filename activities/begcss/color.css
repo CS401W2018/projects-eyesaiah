@@ -8,7 +8,7 @@ footer p {
 }
 
 #firstpar {
-    color:aquamarine;
+    color:chocolate
 }
 
 .blue {
@@ -17,4 +17,7 @@ footer p {
 
 .bigger {
     font-size: 18pt;
+}
+.orange{
+    color:orange
 }
