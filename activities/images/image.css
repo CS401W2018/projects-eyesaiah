@@ -1,0 +1,17 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+    background: url('beige.jpg') #002b33; 
+}
+
+.mylist {
+    
+    list-style-image: url('⚔️');
+    
+}
+
+
+header {
+    color:azure;
+    background: url("black.jpg");
+}
