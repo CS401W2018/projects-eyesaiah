@@ -1,0 +1,17 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('rock.jpg') rgb(0, 0, 0
+    ); 
+}
+
+.mylist {
+    list-style-image: url(icon.jpg);
+}
+
+header {
+    color: dodgerblue;
+}
+
+.flag {
+    background: url(pilipino.jpg) no-repeat;
+}
