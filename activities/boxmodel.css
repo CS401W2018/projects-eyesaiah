@@ -1,0 +1,45 @@
+body{
+    font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif;
+}
+
+footer{
+    color: cornflowerblue;
+}
+
+header {
+    background-color: burlywood;
+    padding: 30px 15px 30px;
+    margin: 25px;
+    width: 80%;
+    overflow: visible;
+}
+
+header h1{
+    border: 5px dashed #000;
+}
+
+main h1{
+    background-color: burlywood;
+    padding: 13px;
+    margin: 12px;
+    border: 5px dotted #000;
+}
+
+div{
+    background-color: burlywood;
+    padding: 13px;
+    margin: 12px;
+    border: 5px ridge #000
+}
+
+.luffy {
+    width: 100px;
+    border: thin solid black
+}
+
+.luffy img {
+    width: 100%;
+    border: thin solid black;
+    text-align: center;
+    margin: 10px auto;
+}
