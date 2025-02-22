@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color:black;
+    background-color:green;
     text-decoration: underline;
 }
 
@@ -63,6 +63,7 @@ main {
 figure {
     font-style: italic;
     text-align: center;
+    float: left;
 }
 
 footer {
