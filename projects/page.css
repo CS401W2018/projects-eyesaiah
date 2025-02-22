@@ -1,0 +1,71 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15pt;
+    margin: 0;
+    padding: 0;
+    background-color: silver;
+}
+
+#wrapper {
+    width: 900px;
+    height: 1300px;
+    margin: 0 auto;
+    background: burlywood;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0.1);
+}
+
+header {
+    padding: 0.5;
+    text-align: center;
+    color: rgba(139, 126, 126);
+    text-shadow: 2px 2px 5px rgb(5, 3, 3, 0.5);
+    background-image: url('wood.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    background: gold;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+nav ul li a:hover {
+    color:black;
+    text-decoration: underline;
+}
+
+main {
+    padding: 10px;
+    line-height: 1.5;
+}
+
+figure {
+    font-style: italic;
+    text-align: center;
+}
+
+footer {
+    padding: 1;
+    text-align: left;
+    color: black
+}
