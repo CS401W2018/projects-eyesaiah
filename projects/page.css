@@ -3,14 +3,14 @@ body {
     font-size: 15pt;
     margin: 0;
     padding: 0;
-    background-color: silver;
+    background-color: burlywood;
 }
 
 #wrapper {
     width: 900px;
     height: 1300px;
     margin: 0 auto;
-    background: burlywood;
+    background: gainsboro;
     padding: 20px;
     box-shadow: 0 0 10px rgb(0, 0, 0.1);
 }
@@ -18,7 +18,7 @@ body {
 header {
     padding: 0.5;
     text-align: center;
-    color: rgba(139, 126, 126);
+    color: black;
     text-shadow: 2px 2px 5px rgb(5, 3, 3, 0.5);
     background-image: url('wood.jpg');
     background-repeat: no-repeat;
