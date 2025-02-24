@@ -26,6 +26,17 @@ header {
     background-size: cover;
 }
 
+.Strawhat {
+    border: 6px solid black;
+    border-radius: 8px;
+}
+
+figure {
+    font-style: italic;
+    text-align: center;
+    float: left;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -59,20 +70,8 @@ main {
     line-height: 1.5;
 }
 
-
-figure {
-    font-style: italic;
-    text-align: center;
-    float: left;
-}
-
 footer {
     padding: 1;
     text-align: left;
     color: black
-}
-
-.Strawhat {
-    border: 6px solid black;
-    border-radius: 8px;
 }
