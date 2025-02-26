@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.parent {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.child {
+    background-color: chartreuse;
+    margin: 10px;
+    width: 100px;
+}
+
+nav a{
+    display: block;
+    background-color: blanchedalmond;
+    color: chartreuse;
+    padding: 5px 10px;
+}
+
+nav {
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-evenly;
+}
+
+.featured {
+    order: -1;
+}
