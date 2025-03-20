@@ -11,14 +11,19 @@
     </header>
     <main>
         <form action="processing.html" method="get">
+            <fieldset>
+                <legend>Account Info</legend>
             <div class="form-row">
-          First Name: <input type="text" name="firstname" placeholder="First Name" required="First Name">
-        </div>
-        <div>
-          Email: <input type="email" name="email" placeholder="Email" required="Email">
+                <label for="fullname">Full Name: </label>
+                <input type="text" name="firstname" placeholder="First Name" required="First Name" id="fullname">
         </div>
         <div class="form-row">
-            Password: <input type="password" name="Password" placeholder="Password" required="Password" id="pass">
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Email@byuh.edu" required="Email" id="email">
+        </div>
+        <div class="form-row">
+            <label for="password">Password:</label>
+            <input type="password" name="Password" placeholder="Password" required="Password" id="pass">
         </div>
         <div class="form-row">
             <label for="state">State:</label>
@@ -29,17 +34,27 @@
                 <option value="UT">Utah</option>
             </select>
         </div>
-        <div>
-            <label for="year">Year in School</label>
+        <div class="radio-row">
+            <div class="form-spacer">Year of School:</div>
             <label><input type="radio" name="year" value="Freshman"> Freshman</label>
             <label><input type="radio" name="year" value="Sophmore"> Sophmore</label>
             <label><input type="radio" name="year" value="Junior"> Junior</label>
             <label><input type="radio" name="year" value="Senior"> Senior</label>
         </div>
         <div class="form-row">
+            <div class="form-spacer"></div>
+            <label><input type="checkbox" name="agree" id="agree" checked>Remeber Me </label>
+        </div>
+        <div class="form-row">
+            <label for="comments">Comments:</label>
+            <textarea name="Comments" id="comments"></textarea>
+        </div>
+        <div class="form-row">
+            <div class="form-spacer"></div>
           <input type="submit">
         </div>
         </form>
+        </fieldset>
 
         <h2>Questions:</h2>
         <h3>1. The form tag has an "action" attribute. What does it do?</h3>
@@ -48,6 +63,12 @@
         <p>- Method attribute specifies how the form data will be sent like GET or POST.</p>
         <h3>3. What is the difference between a "POST" and a "GET"?</h3>
         <p>- POST sends the data in the request body more secure, while GET sends the data in the URL in less secure.</p>
+        <h2>Questions:</h2>
+        <h3>1. What are different ways to style your form?</h3>
+        <p>- Flexbox, Grid, frameworks like Bootstrap or Tailwind, margins or padding, pseu classes, custom checkboxes or radio buttons, and lastly validation styling.</p>
+        <h3>2. Why does the professor like to use flex?</h3>
+        <p>- Responsive, easy alignment, less code, and dynamic handling.</p>
+        
     </main>
     <footer>
         <p>&copy; 2025 Isaiah Gasmen</p>
