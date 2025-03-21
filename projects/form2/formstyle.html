@@ -16,19 +16,19 @@
                 <Legend>Personal Information</Legend>
                 <div class="form-row">
                     <label for="fullname">Full name:</label>
-                    <input type="text" name="firstname" placeholder="Full Name" required id="fullname">
+                    <input type="text" name="firstname" placeholder="Full Name" id="fullname" required>
                 </div>
                 <div class="form-row">
-                    <label for="date of birth">Date of Birth:</label>
-                    <input type="date of birth" name="date of birth" placeholder="Month/Date/Year" required id="date of birth">
+                    <label for="DoB">Date of Birth:</label>
+                    <input type="DoB" name="Dob" placeholder="Month/Date/Year" id="DoB" required>
                 </div>
                 <div class="form-row">
                     <label for="phone">Phone Number:</label>
-                    <input type="phone" name="phone" placeholder="+1 (808) 012-3456" required id="phone">
+                    <input type="phone" name="phone" placeholder="+1 (808) 012-3456" id="phone" required>
                 </div>
                 <div class="form-row">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="Email@gmail.com" required id="email">
+                    <input type="email" name="email" placeholder="Email@gmail.com" id="email" required>
                 </div>
                 <div class="form-row">
                     <label for="password">Password:</label>
@@ -51,8 +51,8 @@
                 </label>
                 <div class="form-row">
                     <label for="state">Islands:</label>
-                    <select name="state" id="state">
-                        <option value="blank"></option>
+                    <select name="state" id="state" required>
+                        <option value= disabled selected>Select your Island</option>
                         <option value="NH">Niihau</option>
                         <option value="KI">Kauai</option>
                         <option value="OU">Oahu</option>
@@ -65,21 +65,21 @@
             <fieldset>
                 <legend>Player Information</legend>
                 <div class="form-row">
-                    <label for="warrior tag">Warrior Tag:</label>
-                    <input type="text" name="warrior tag" placeholder="e.g Slayer" required id="warrior tag">
+                    <label for="warrior_tag">Warrior Tag:</label>
+                    <input type="text" name="warrior_tag" placeholder="e.g Slayer" id="warrior_tag" required>
                 </div>
                 <div class="form-row">
-                    <label for="warrior id">Warcraft ID:</label>
-                    <input type="text" name="warcraft id" placeholder="e.g 00102003" required id="warcraft id">
+                    <label for="warrior_id">Warcraft ID:</label>
+                    <input type="text" name="warrior_id" placeholder="e.g 00102003" id="warrior_id" required>
                 </div>
                 <div class="form-row">
-                    <label for="guild name">Guild Name:</label>
-                    <input type="text" name="guild name" required id="guild name">
+                    <label for="guild_name">Guild Name:</label>
+                    <input type="text" name="guild_name" id="guild_name" required>
                 </div>
                 <div class="form-row">
-                    <label for="combat roles">Combat Roles:</label>
-                    <select name="combat roles" required id="combat">
-                        <option value="blank"></option>
+                    <label for="combat_roles">Combat Roles:</label>
+                    <select name="combat_roles" id="combat_roles" required>
+                        <option value= disabled selected>Select a Role</option>
                         <option>Tank</option>
                         <option>Fighter</option>
                         <option>Assassin</option>
@@ -90,8 +90,8 @@
                 </div>
                 <div class="form-row">
                     <label for="rank">Rank:</label>
-                    <select name="rank" required id="rank">
-                        <option value="blank"></option>
+                    <select name="rank" id="rank" required>
+                        <option value= disabled selected>Select Rank</option>
                         <option>E-Rank</option>
                         <option>D-Rank</option>
                         <option>C-Rank</option>
@@ -102,8 +102,8 @@
                 </div>
                 <div class="form-row">
                     <label for="position">Position:</label>
-                    <select name="position" required id="position">
-                        <option value="blank"></option>
+                    <select name="position" id="position" required>
+                        <option value= disabled selected>Select the Position</option>
                         <option>Commander</option>
                         <option>Vice-Commander</option>
                         <option>Tactical Officer</option>
@@ -114,7 +114,7 @@
                     </select>
                     <br>
                     <label for="player summary">Player Summary:</label>
-                    <textarea id="player summary" name="player summary"></textarea>
+                    <textarea id="player summary" name="player summary" rows="4" placeholder="Summary Describe Your Experience and Skills"></textarea>
                 </div>
                 <label>
                     <input type="checkbox" name="terms" required>I Agree To The Terms & Conditions
