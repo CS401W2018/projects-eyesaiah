@@ -19,12 +19,12 @@
                     <input type="text" name="firstname" placeholder="Full Name" id="fullname" required>
                 </div>
                 <div class="form-row">
-                    <label for="DoB">Date of Birth:</label>
-                    <input type="DoB" name="Dob" placeholder="Month/Date/Year" id="DoB" required>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" id="dob"required>
                 </div>
                 <div class="form-row">
                     <label for="phone">Phone Number:</label>
-                    <input type="phone" name="phone" placeholder="+1 (808) 012-3456" id="phone" required>
+                    <input type="tel" name="phone" placeholder="+1 (808) 012-3456" id="phone" required>
                 </div>
                 <div class="form-row">
                     <label for="email">Email:</label>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="form-row">
                     <label for="password">Password:</label>
-                    <input type="password" name="password" required id="password">
+                    <input type="password" name="password" id="password" required>
                 </div>
             </fieldset>
             <br>
@@ -41,13 +41,13 @@
                 <label>Gender:</label>
                 <br>
                 <label>
-                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" id="gender_male" name="gender" value="Male"> Male
                 </label>
                 <label>
-                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" id="gender_female" name="gender" value="Female"> Female
                 </label>
                 <label>
-                    <input type="radio" name="gender" value="I prefer not to"> I prefer not to
+                    <input type="radio" id="gender_I_prefer_not_to" name="gender" value="I prefer not to"> I prefer not to
                 </label>
                 <div class="form-row">
                     <label for="state">Islands:</label>
