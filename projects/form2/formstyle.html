@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warcraft</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+    <header>
+        <h1>Warcraft Guild Application</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <Legend>Personal Information</Legend>
+                <div class="form-row">
+                    <label for="fullname">Full name:</label>
+                    <input type="text" name="firstname" placeholder="Full Name" required="Full Name" id="fullname">
+                </div>
+                <div class="form-row">
+                    <label for="date of birth">Date of Birth:</label>
+                    <input type="date of birth" name="date of birth" placeholder="Month/Date/Year" required="Date of Birth" id="date of birth">
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="phone" name="phone" placeholder="+1 (808) 012-3456" required="Phone" id="phone">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Email@gmail.com" required="Email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" required="Password" id="password">
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>Gender:</label>
+                <br>
+                <label>
+                    <input type="radio" name="gender" value="Male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Female"> Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="I prefer not to"> I prefer not to
+                </label>
+                <div class="form-row">
+                    <label for="state">Islands:</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="NH">Niihau</option>
+                        <option value="KI">Kauai</option>
+                        <option value="OU">Oahu</option>
+                        <option value="MK">Molokai</option>
+                        <option value="LN">Lanai</option>
+                        <option value="HI">Hawaii</option>
+                    </select>  
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Player Information</legend>
+                <div class="form-row">
+                    <label for="warrior tag">Warrior Tag:</label>
+                    <input type="text" name="warrior tag" placeholder="e.g Slayer" required="Warrior Tag" id="warrior tag">
+                </div>
+                <div class="form-row">
+                    <label for="warrior id">Warcraft ID:</label>
+                    <input type="text" name="warcraft id" placeholder="e.g 00102003" required="Warcraft ID" id="warcraft id">
+                </div>
+                <div class="form-row">
+                    <label for="guild name">Guild Name:</label>
+                    <input type="text" name="guild name" required="Guild Name" id="guild name">
+                </div>
+                <div class="form-row">
+                    <label for="combat roles">Combat Roles:</label>
+                    <select name="combat roles" id="combat">
+                        <option value="blank"></option>
+                        <option>Tank</option>
+                        <option>Fighter</option>
+                        <option>Assassin</option>
+                        <option>Marksman</option>
+                        <option>Mage</option>
+                        <option>Support</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="rank">Rank:</label>
+                    <select name="rank" id="rank">
+                        <option value="blank"></option>
+                        <option>E-Rank</option>
+                        <option>D-Rank</option>
+                        <option>C-Rank</option>
+                        <option>B-Rank</option>
+                        <option>A-Rank</option>
+                        <option>S-Rank</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="position">Position:</label>
+                    <select name="position" id="position">
+                        <option value="blank"></option>
+                        <option>Commander</option>
+                        <option>Vice-Commander</option>
+                        <option>Tactical Officer</option>
+                        <option>Specialist</option>
+                        <option>Scout</option>
+                        <option>Tactical Officer</option>
+                        <option>Substitute</option>
+                    </select>
+                    <br>
+                    <label for="player summary">Player Summary:</label>
+                    <textarea id="player summary" name="player summary"></textarea>
+                </div>
+                <label>
+                    <input type="checkbox" name="terms" required>I Agree To The Terms & Conditions
+                </label>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Isaiah Gasmen</p>
+    </footer>
+</body>
+</html>
