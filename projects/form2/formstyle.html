@@ -13,14 +13,14 @@
     <main>
         <form>
             <fieldset>
-                <Legend>Personal Information</Legend>
+                <legend>Personal Information</legend>
                 <div class="form-row">
                     <label for="fullname">Full name:</label>
-                    <input type="text" name="firstname" placeholder="Full Name" id="fullname" required>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fullname" required>
                 </div>
                 <div class="form-row">
                     <label for="dob">Date of Birth:</label>
-                    <input type="date" name="dob" id="dob"required>
+                    <input type="date" name="dob" id="dob" required>
                 </div>
                 <div class="form-row">
                     <label for="phone">Phone Number:</label>
@@ -35,33 +35,27 @@
                     <input type="password" name="password" id="password" required>
                 </div>
             </fieldset>
-            <br>
             <fieldset>
                 <legend>Preferences</legend>
-                <label>Gender:</label>
-                <br>
-                <label>
-                    <input type="radio" id="gender_male" name="gender" value="Male"> Male
-                </label>
-                <label>
-                    <input type="radio" id="gender_female" name="gender" value="Female"> Female
-                </label>
-                <label>
-                    <input type="radio" id="gender_I_prefer_not_to" name="gender" value="I prefer not to"> I prefer not to
-                </label>
+                <div class="form-row">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                    <label><input type="radio" name="gender" value="I prefer not to"> I prefer not to</label>
+                </div>
                 <div class="form-row">
                     <label for="state">Islands:</label>
                     <select name="state" id="state" required>
-                        <option value= disabled selected>Select your Island</option>
+                        <option value="" disabled selected>Select your Island</option>
                         <option value="NH">Niihau</option>
                         <option value="KI">Kauai</option>
                         <option value="OU">Oahu</option>
                         <option value="MK">Molokai</option>
                         <option value="LN">Lanai</option>
                         <option value="HI">Hawaii</option>
-                    </select>  
+                    </select>
+                </div>
             </fieldset>
-            <br>
             <fieldset>
                 <legend>Player Information</legend>
                 <div class="form-row">
@@ -79,7 +73,7 @@
                 <div class="form-row">
                     <label for="combat_roles">Combat Roles:</label>
                     <select name="combat_roles" id="combat_roles" required>
-                        <option value= disabled selected>Select a Role</option>
+                        <option value="" disabled selected>Select a Role</option>
                         <option>Tank</option>
                         <option>Fighter</option>
                         <option>Assassin</option>
@@ -91,7 +85,7 @@
                 <div class="form-row">
                     <label for="rank">Rank:</label>
                     <select name="rank" id="rank" required>
-                        <option value= disabled selected>Select Rank</option>
+                        <option value="" disabled selected>Select Rank</option>
                         <option>E-Rank</option>
                         <option>D-Rank</option>
                         <option>C-Rank</option>
@@ -103,22 +97,24 @@
                 <div class="form-row">
                     <label for="position">Position:</label>
                     <select name="position" id="position" required>
-                        <option value= disabled selected>Select the Position</option>
+                        <option value="" disabled selected>Select the Position</option>
                         <option>Commander</option>
                         <option>Vice-Commander</option>
                         <option>Tactical Officer</option>
                         <option>Specialist</option>
                         <option>Scout</option>
-                        <option>Tactical Officer</option>
                         <option>Substitute</option>
                     </select>
-                    <br>
-                    <label for="player summary">Player Summary:</label>
-                    <textarea id="player summary" name="player summary" rows="4" placeholder="Detail Your Experience and Specialist in Gaming"></textarea>
                 </div>
-                <label>
-                    <input type="checkbox" name="terms" required>I Agree To The Terms & Conditions
-                </label>
+                <div class="form-row">
+                    <label for="player_summary">Player Summary:</label>
+                    <textarea id="player_summary" name="player_summary" rows="4" placeholder="Detail Your Experience and Specialist in Gaming"></textarea>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <input type="checkbox" name="terms" required> I Agree To The Terms & Conditions
+                    </label>
+                </div>
             </fieldset>
             <button type="submit">Submit your Warcraft Guild Application</button>
         </form>
