@@ -55,7 +55,10 @@ form {
     text-align: left;
     width: 150px;
 }
-
+.Agree {
+    text-align: center;
+    width: 300px;
+}
 .radio-row {
     text-align: left;
     display: flex;
