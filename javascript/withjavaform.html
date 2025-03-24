@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement - Form Processing with JavaScript</title>
+    <link rel="stylesheet" href="javacss.css">
+</head>
+<body>
+    <header>
+        <h1>Engagement - Form Processing with JavaScript</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="get" id="myform">
+            <fieldset>
+                <legend>Account Info</legend>
+            <div class="form-row">
+                <label for="fullname">Full Name: </label>
+                <input type="text" name="firstname" placeholder="First Name" required="First Name" id="fullname">
+        </div>
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Email@byuh.edu" required="Email" id="email">
+        </div>
+        <div class="form-row">
+            <label for="password">Password:</label>
+            <input type="password" name="Password" placeholder="Password" required="Password" id="pass">
+        </div>
+        <div class="form-row">
+            <label for="age">Age:</label>
+            <input type="number" name="age" placeholder="age" required="age" id="age">
+        </div>
+        <div class="form-row">
+            <label for="state">State:</label>
+            <select name="state" id="state">
+                <option value="blank"></option>
+                <option value="CO">Colorado</option>
+                <option value="HI">Hawaii</option>
+                <option value="UT">Utah</option>
+            </select>
+        </div>
+        <div class="radio-row">
+            <div class="form-spacer">Year of School:</div>
+            <label><input type="radio" name="year" value="Freshman"> Freshman</label>
+            <label><input type="radio" name="year" value="Sophmore"> Sophmore</label>
+            <label><input type="radio" name="year" value="Junior"> Junior</label>
+            <label><input type="radio" name="year" value="Senior"> Senior</label>
+        </div>
+        <div class="form-row">
+            <div class="form-spacer"></div>
+            <label><input type="checkbox" name="agree" id="agree" checked>Remeber Me </label>
+        </div>
+        <div class="form-row">
+            <label for="comments">Comments:</label>
+            <textarea name="Comments" id="comments"></textarea>
+        </div>
+        <div class="form-row">
+            <div class="form-spacer"></div>
+          <input type="submit">
+        </div>
+        </form>
+        </fieldset>
+
+        <h2>Questions:</h2>
+        <h3>1. What is JavaScript? How did it get its name?</h3>
+        <p>- The JavaScript is a programming language for web development. It was named JavaScript for marketing, despite that having no relation to Java.</p>
+        <h3>2. What are the two ways you can run JavaScript?</h3>
+        <p>- It can also run in the browser or on the server using Node.js.</p>
+        <h3>3. What was the most popular front end js library?</h3>
+        <p>- The jQuery was the most popular front end JS library.</p>
+        <h3>4. What is the most popular front-end js library today?</h3>
+        <p>- The React.js is the most popular front end JS library today.</p>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 Isaiah Gasmen</p>
+    </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit',function(evenet){
+            event.preventDefault();
+            alert("Form Submitted");
+
+            const fullname = document.getElementById("fullname").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("pass").value;
+
+            if (!fullname) {
+                alert("You need to enter your name.");
+                return;
+            }
+
+            if (!age || age<18) {
+                alert("You need to be 18");
+                return;
+            }
+
+            const formData = {
+                fullname: fullname,
+                email: email,
+                password: pass
+            };
+
+            console.log(formData)
+        });
+    </script>
+</body>
+</html>
