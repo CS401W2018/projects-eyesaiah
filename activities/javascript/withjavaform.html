@@ -69,6 +69,12 @@
         <p>- The jQuery was the most popular front end JS library.</p>
         <h3>4. What is the most popular front-end js library today?</h3>
         <p>- The React.js is the most popular front end JS library today.</p>
+        <br>
+        <h2>Questions part 2</h2>
+        <h3>1. What is AJAX?</h3>
+        <p>- It's a Asynchronous JavaScript and XML is a technique that allows web pages to load data asynchronous without refreshing the entire page. It enables dynamic content updates.</p>
+        <h3>2. Why do you put your JS Code in a separate file?</h3>
+        <p>- We can put in our JS code in a separate file for better organization, it is easier maintenance, reusabilty. It keeps the HTML cleaner and allows for better performance since the JS file can be cached by the browser.</p>
         
     </main>
     <footer>
@@ -99,7 +105,19 @@
                 password: pass
             };
 
-            console.log(formData)
+            console.log(formData);
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "submit.json", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert('Form submitted succesfully.');
+                } else if (xhr.readyState === 4) {
+                    alert('Error submitting form.')
+                }
+            };
+            xhr.send(JSON.stringify(formData));
+
         });
     </script>
 </body>
