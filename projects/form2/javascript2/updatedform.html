@@ -131,7 +131,6 @@
             const email = document.getElementById("email").value.trim();
             const password = document.getElementById("password").value.trim();
             const dob = document.getElementById("dob").value.trim();
-            const phone = document.getElementById("phone").value.trim();
             const warriorTag = document.getElementById("warrior_tag").value.trim();
             const warriorID = document.getElementById("warrior_id").value.trim();
             const guildName = document.getElementById("guild_name").value.trim();
@@ -147,12 +146,6 @@
                 return;
             }
 
-            const phonePattern = /^\+1 \(\d{3}\) \d{3}-\d{4}$/;
-            if (!phone.match(phonePattern)) {
-                alert("Phone number be in format: +1 (808) 012-3456");
-                return;
-            }
-            
             if (!termsChecked) {
                 alert("You must agree to the terms and condition.");
                 return;
@@ -162,7 +155,6 @@
                 fullname: fullname,
                 email: email,
                 dob: dob,
-                phone: phone,
                 password: password, 
                 warriorTag: warriorTag,
                 warriorID: warriorID,
