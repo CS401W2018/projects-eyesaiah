@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warcraft</title>
+    <link rel="stylesheet" href="updatedform.css">
+</head>
+<body>
+    <header>
+        <h1>Warcraft Guild Application</h1>
+    </header>
+    <main>
+        <form id="myform">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-row">
+                    <label for="fullname">Full name:</label>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fullname" required>
+                </div>
+                <div class="form-row">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" placeholder="+1 (808) 012-3456" id="phone" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Email@gmail.com" id="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                <div class="form-row">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                    <label><input type="radio" name="gender" value="I prefer not to"> I prefer not to</label>
+                </div>
+                <div class="form-row">
+                    <label for="state">Islands:</label>
+                    <select name="state" id="state" required>
+                        <option value="" disabled selected>Select your Island</option>
+                        <option value="NH">Niihau</option>
+                        <option value="KI">Kauai</option>
+                        <option value="OU">Oahu</option>
+                        <option value="MK">Molokai</option>
+                        <option value="LN">Lanai</option>
+                        <option value="HI">Hawaii</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Player Information</legend>
+                <div class="form-row">
+                    <label for="warrior_tag">Warrior Tag:</label>
+                    <input type="text" name="warrior_tag" placeholder="e.g Slayer" id="warrior_tag" required>
+                </div>
+                <div class="form-row">
+                    <label for="warrior_id">Warcraft ID:</label>
+                    <input type="text" name="warrior_id" placeholder="e.g 00102003" id="warrior_id" required>
+                </div>
+                <div class="form-row">
+                    <label for="guild_name">Guild Name:</label>
+                    <input type="text" name="guild_name" id="guild_name" required>
+                </div>
+                <div class="form-row">
+                    <label for="combat_roles">Combat Roles:</label>
+                    <select name="combat_roles" id="combat_roles" required>
+                        <option value="" disabled selected>Select a Role</option>
+                        <option>Tank</option>
+                        <option>Fighter</option>
+                        <option>Assassin</option>
+                        <option>Marksman</option>
+                        <option>Mage</option>
+                        <option>Support</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="rank">Rank:</label>
+                    <select name="rank" id="rank" required>
+                        <option value="" disabled selected>Select Rank</option>
+                        <option>E-Rank</option>
+                        <option>D-Rank</option>
+                        <option>C-Rank</option>
+                        <option>B-Rank</option>
+                        <option>A-Rank</option>
+                        <option>S-Rank</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="position">Position:</label>
+                    <select name="position" id="position" required>
+                        <option value="" disabled selected>Select the Position</option>
+                        <option>Commander</option>
+                        <option>Vice-Commander</option>
+                        <option>Tactical Officer</option>
+                        <option>Specialist</option>
+                        <option>Scout</option>
+                        <option>Substitute</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="player_summary">Player Summary:</label>
+                    <textarea id="player_summary" name="player_summary" rows="4" placeholder="Detail Your Experience and Specialist in Gaming"></textarea>
+                </div>
+                <div class="Agree">
+                    <label>
+                        <input type="checkbox" name="terms" required> I Agree To The Terms & Conditions
+                    </label>
+                </div>
+            </fieldset>
+            <button type="submit">Submit your Warcraft Guild Application</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Isaiah Gasmen</p>
+    </footer>
+
+    <script>
+        document.getElementById('myform').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const fullname = document.getElementById("fullname").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const dob = document.getElementById("dob").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const warriorTag = document.getElementById("warrior_tag").value.trim();
+            const warriorID = document.getElementById("warrior_id").value.trim();
+            const guildName = document.getElementById("guild_name").value.trim();
+            const termsChecked = document.getElementById("terms").value.trim();
+
+            if (!fullname || !email || !password || !dob || phone || warriorTag || !warriorID || !guildName) {
+                alert("All fields must be filled out!");
+                return;
+            }
+
+            if (password.length <6) {
+                alert("Password must be at least 6 caharacters long.");
+                return;
+            }
+
+            const phonePattern = /^\+1 \(\d{3}\) \d{3}-\d{4}$/;
+            if (!phone.match(phonePattern)) {
+                alert("Phone number be in format: +1 (808) 012-3456");
+                return;
+            }
+            
+            if (!termsChecked) {
+                alert("You must agree to the terms and condition.");
+                return;
+            }
+
+            const formData = {
+                fullname: fullname,
+                email: email,
+                dob: dob,
+                phone: phone,
+                password: password, 
+                warriorTag: warriorTag,
+                warriorID: warriorID,
+                guildName: guildName
+            };
+
+            console.log("Submitting From Data:", formData);
+
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "submit.json", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert('Form submitted succesfully.');
+                    document.getElementById('myform').reset();
+                } else if (xhr.readyState === 4) {
+                    alert('Error submitting form.');
+                }
+            };
+            xhr.send();
+        });
+    </script>
+
+</body>
+</html>
