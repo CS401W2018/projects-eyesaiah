@@ -127,14 +127,15 @@
         document.getElementById('myform').addEventListener('submit', function(event) {
             event.preventDefault();
             
-            const fullname = document.getElementById("fullname").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const password = document.getElementById("password").value.trim();
-            const dob = document.getElementById("dob").value.trim();
-            const warriorTag = document.getElementById("warrior_tag").value.trim();
-            const warriorID = document.getElementById("warrior_id").value.trim();
-            const guildName = document.getElementById("guild_name").value.trim();
-            const termsChecked = document.getElementById("terms").value.trim();
+            const fullname = document.getElementById("fullname").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const password = document.getElementById("password").value;
+            const dob = document.getElementById("dob").value;
+            const warriorTag = document.getElementById("warrior_tag").value;
+            const warriorID = document.getElementById("warrior_id").value;
+            const guildName = document.getElementById("guild_name").value;
+            const termsChecked = document.getElementById("terms").value;
 
             if (!fullname || !email || !password || !dob || phone || warriorTag || !warriorID || !guildName) {
                 alert("All fields must be filled out!");
@@ -154,6 +155,7 @@
             const formData = {
                 fullname: fullname,
                 email: email,
+                phone: phone,
                 dob: dob,
                 password: password, 
                 warriorTag: warriorTag,
