@@ -16,6 +16,22 @@ nav {
     margin: 10px;
     font-weight: bold;
     transition: color 0.3s;
+    display: flex;
+}
+
+nav a {
+    color: #ffcc00;
+    margin: 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: white;
+    background-color: #ffcc00;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
 nav a:hover {
