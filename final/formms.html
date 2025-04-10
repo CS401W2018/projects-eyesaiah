@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Update 2</title>
+    <link rel="stylesheet" href="formms.css">
+</head>
+<body>
+    <header>
+        <h1>Anime Fan Form</h1>
+    </header>
+
+    <nav>
+        <a href="final.html">Home</a>
+        <a href="onepiece.html">One Piece</a>
+        <a href="heroacademia.html">Hero Academia</a>
+        <a href="sololeveling.html">Solo Leveling</a>
+        <a href="bleach.html">Bleach</a>
+        <a href="popularity.html">Popularity Page</a>
+        <a href="formms.html">Form</a>
+    </nav>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fullname" required>
+                </div>
+                <div class="form-row">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" placeholder="dob" id="dob" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" placeholder="+1 (808) 012-3456" id="phone" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Email@gmail.com" id="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Anime Preferences</legend>
+                <div class="form-row">
+                    <label for="favorite_anime">Favorite Anime:</label>
+                    <input type="text" name="favorite_anime" id="favorite_anime" placeholder="e.g One Piece, My Hero Academia" required>
+                </div>
+                <div class="form-row">
+                    <label for="favorite_character">Favorite Character:</label>
+                    <input type="text" name="favorite_character" id="favorite_character" placeholder="e.g Luffy, Deku" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Anime Experience</legend>
+                <div class="form-row">
+                    <label for="watch_time">How long have you been watching anime?</label>
+                    <input type="text" name="watch_time" id="watch_time" placeholder="e.g 5 years, 10 months" required>
+                </div>
+                <div class="form-row">
+                    <label for="watched_anime">How many anime that you have watched?</label>
+                    <input type="number" name="watched_anime" id="watched_anime" required>
+                </div>
+                <div class="form-row">
+                    <label for="anime_summary">Why do you love anime?</label>
+                    <textarea id="anime_summary" name="anime_summary" rows="4" placeholder="Share your love for anime and what it means to you"></textarea>
+                </div>
+                <div class="Agree">
+                    <label>
+                        <input type="checkbox" name="terms" required>I Agree to the Terms & Conditions
+                    </label>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Your Anime Fan Form</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Isaiah Gasmen</p>
+    </footer>
+</body>
+</html>
