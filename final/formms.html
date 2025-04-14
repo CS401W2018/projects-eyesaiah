@@ -87,36 +87,34 @@
             const phone = document.getElementById('phone').value;
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
-            const favoriteAnime= document.getElementById('favorite_anime').value;
+            const favoriteAnime = document.getElementById('favorite_anime').value;
             const favoriteCharacter = document.getElementById('favorite_character').value;
             const watchTime = document.getElementById('watch_time').value;
             const watchedAnime = document.getElementById('watched_anime').value;
             const animeSummary = document.getElementById('anime_summary').value;
             const termsAccepted = document.querySelector('input[name="terms"]').checked;
-         }
-
-         if (!fullname || !dob || !phone || !email || !password || !favoriteAnime || !favoriteCharacter || !watchTime || !watchedAnime || !animeSummary) {
-            alert ("Please fill in all required fields.");
-            event.preventDefault();
-            return false;
-         }
-
-         if (!termsAccepted) {
-            alert("You must agree to the Terms & Conditions.");
-            event.preventDefault();
-            return false;
-         }
-
-         alert ("Form submitted succesfully!");
-         return true;
-        
-
-        window.onload = function(){
+    
+            if (!fullname || !dob || !phone || !email || !password || !favoriteAnime || !favoriteCharacter || !watchTime || !watchedAnime || !animeSummary) {
+                alert("Please fill in all required fields.");
+                event.preventDefault();
+                return false;
+            }
+    
+            if (!termsAccepted) {
+                alert("You must agree to the Terms & Conditions.");
+                event.preventDefault();
+                return false;
+            }
+    
+            alert("Form submitted successfully!");
+            return true;
+        }
+    
+        window.onload = function () {
             const form = document.querySelector('form');
-                form.onsubmit = validateForm;
+            form.onsubmit = validateForm;
         };
-
     </script>
-
+    
 </body>
 </html>
